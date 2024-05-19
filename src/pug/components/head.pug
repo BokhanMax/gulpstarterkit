@@ -1,0 +1,19 @@
+block variables
+head
+    meta(charset="UTF-8")
+    title=pageTitle
+    meta(name="description", content=pageDescr)
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    if OpenGraph
+        meta(property="og:title", content=pageTitle)
+        meta(property="og:description", content=pageDescr)
+        if pageUrl
+            meta(property="og:url", content=pageUrl)
+        if OGImg
+            meta(property="og:image", content=OGImg)
+        meta(property="twitter:title", content=pageTitle)
+        meta(property="twitter:description", content=pageDescr)
+        if OGImg
+            meta(property="twitter:image", content=OGImg)
+    link(rel="stylesheet", href="./css/style.min.css")
+    script(src="./js/main.min.js")

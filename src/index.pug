@@ -1,28 +1,16 @@
+block variables
+- let pageTitle = 'Головна сторінка';
+- let pageDescr = 'Опис головної сторінки';
+- let pageLang = 'UA';
+- let OpenGraph = false;
+- let pageUrl = '';
+- let OGImg = '';
+
 doctype html
-html(lang="ua")
-    head
-        meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        link(rel="stylesheet", href="./css/style.min.css")
-        script(src="./js/main.min.js")
-        title Тайтл
-    body
-        header
-            .logo 
-                img(src="logo.png", alt="Website Logo")
-            include pug/component.menu.pug
-            .lang
-                span UA
-                span EN
-            .hbutton
-                a(href="#") Кнопка
+html(lang=pageLang)
+    include pug/components/head.pug
+    body 
+        include pug/components/header.pug
         main
-            section
-                h1 Вітаю в GULP Starter Kit!
-        footer
-            .fwidget
-                p віджет футера
-            .fwidget
-                p віджет футера
-            .fwidget
-                p віджет футера
+            include pug/components/hero.pug
+        include pug/components/footer.pug

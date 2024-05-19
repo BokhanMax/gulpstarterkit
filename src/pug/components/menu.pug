@@ -1,0 +1,39 @@
+-
+    const menuitems = [
+    {
+        name: 'Home',
+        url: '/',
+        customid: '',
+    },
+    {
+        name: 'About',
+        url: '#',
+        customid: '',
+    },
+    {
+        name: 'Services',
+        url: '#',
+        customid: '',
+    },
+    {
+        name: 'Portfolio',
+        url: '#',
+        customid: '',
+    },
+    {
+        name: 'Information',
+        url: '#',
+        customid: '',
+    },
+    {
+        name: 'Contacts',
+        url: '#',
+        customid: '',
+    },
+    ]
+
+nav
+    ul
+        each menuitem in menuitems
+            li.menuitem
+                a(href = menuitem.url, id = menuitem.customid)= menuitem.name
