@@ -1,4 +1,15 @@
 {
+  "name": "gulp-starter-kit",
+  "version": "1.0",
+  "description": "Code and build your front-end project easily with GULP Starter Kit. All you need in one place!",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp watch",
+    "html": "gulp buildhtml",
+    "php": "gulp buildphp"
+  },
+  "author": "Max Bokhan",
+  "license": "MIT",
   "devDependencies": {
     "browser-sync": "^2.29.3",
     "del": "^7.1.0",
